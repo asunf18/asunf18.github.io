@@ -1,0 +1,130 @@
+:root {
+    --text: #050316;
+    --background: #fbfbfe;
+    --primary: #f0a400;
+    --secondary: #f0cf8a;
+    --accent: #3dc5ff;  
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: var(--text);
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+div.hero-image {
+    height: 400px;  
+    background-image: url('homehero.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+div.logo {
+    position: absolute;
+    left: 50px;
+    top: 75px;
+    background-image: url('logo.png');
+    background-size: 250px;
+    background-repeat: no-repeat;
+    padding: 200px;
+}
+
+header {
+    background-color: var(--secondary);
+    color: var(--text);
+    padding: 1em 0;
+    text-align: center;
+    font-size: 100%;
+}
+
+header h1 a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: var(--accent);
+}
+
+nav {
+    background-color: var(--primary);
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.4em 0.6em;
+    font-weight: bold;
+    display: block;
+}
+
+.welcome-banner {
+    display: flex;
+    text-align: left;
+    padding: 2em 3em;
+    gap: 20px;
+
+}
+.welcome-text {
+    flex: 1;
+}
+.welcome-image {
+    flex: 1;
+
+    min-height: 400px; 
+    background-image: url('valleyvector_side.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--accent);
+}
+
+h2 a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: white;
+}
+
+.page-summaries {
+    display: flex;
+
+    gap: 20px;
+    padding: 1em;
+    background-color: var(--secondary);
+}
+
+footer {
+    color: var(--primary);
+    background-color: #050316;
+    font-size: 75%;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
