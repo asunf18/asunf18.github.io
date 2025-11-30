@@ -40,6 +40,11 @@ header {
     font-size: 100%;
 }
 
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
 header h1 a {
     color: var(--text);
     text-decoration: none;
@@ -76,19 +81,24 @@ nav a {
     display: block;
 }
 
+nav a:hover, nav a:focus {
+    background-color: var(--accent);
+    color: white;
+}
+
 .welcome-banner {
     display: flex;
     text-align: left;
     padding: 2em 3em;
     gap: 20px;
-
+    align-items: top;
 }
+
 .welcome-text {
     flex: 1;
 }
 .welcome-image {
     flex: 1;
-
     min-height: 400px; 
     background-image: url('valleyvector_side.png');
     background-size: contain;
@@ -110,6 +120,19 @@ h2 a:hover {
     color: white;
 }
 
+h3 {
+    color: var(--accent);
+}
+
+h3 a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: black;
+}
+
 .page-summaries {
     display: flex;
 
@@ -118,13 +141,89 @@ h2 a:hover {
     background-color: var(--secondary);
 }
 
+div.sectionbox {
+    flex: 1;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: white;
+    margin: 20px;
+}
+
+.about-page main {
+    max-width: 800px;
+    margin: 2em auto 3em auto;
+    padding: 0 1.5em;
+    line-height: 1.7;
+    
+}
+    
+
+.dine-intro {
+    font-style: italic;
+    border-left: 4px solid var(--accent);
+    padding-left: 0.75em;
+    margin: 0.25em 0 1em 0;
+}
+
+.about-video {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1.5em;
+    text-align: center;
+}
+
+.about-creator-photo {
+    float: right;
+    width: 250px;
+    max-width: 25%;
+    margin: 0 0 1em 1.5em; 
+}
+
+#contactus {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contactus input,
+#contactus select,
+#contactus textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.75em;
+    box-sizing: border-box;
+}
+
+#contactus input[type="submit"],
+#contactus input[type="reset"] {
+    width: 48%; 
+    display: inline-block;
+}
+
+.contactus-bg {
+    background-image: url('lizardbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3em 1em;
+    position: relative;
+}
+
+.contactus-form-container {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
 footer {
     color: var(--primary);
     background-color: #050316;
-    font-size: 75%;
+    font-size: 0.75rem;
     text-align: center;
     padding: 1em 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border-top: 15px solid var(--accent);
+    padding-top: 1.5em;
 }

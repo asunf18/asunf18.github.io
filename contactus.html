@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Here to There | Contact Us</title>
+    <link rel="stylesheet" href="nizhoni.css">
+    <meta name="description" content="Get in touch with us for support and inquiries about higher 
+    education for indigenous students.">
+</head>
+<body>
+    <div class="hero-image">
+        <div class="logo"></div>
+    </div>
+    <header>
+        <h1><a href="index.html">From Here to There: A Navajo's Guide to Higher Education</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="yourdirection.html">Find Your Direction</a></li>
+            <li><a href="thepath.html">Walking The Path</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="contactus-bg">
+        <div class="contactus-form-container">
+        <form id="contactus">
+            <h2>Contact Us</h2>
+            <p><b>Have a question, or just want to say hello?</b></p>
+            <p>I'd love to hear from you! If you have any questions, feedback, or need assistance, 
+             please fill out the form below. We look forward to hearing from you!</p>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="student-status">Educational Status</label>
+            <select id="student-status" name="student_status" required>
+                <option value="">-- Please select one --</option>
+                <option value="considering-college">I’m thinking about college</option>
+                <option value="first-year">I’m a first-year college student</option>
+                <option value="current-student">I’m currently in college</option>
+                <option value="returning-student">I’m a returning student</option>
+                <option value="other">Something else</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="10" required></textarea>
+
+            <input type="submit" value="Send Message">
+
+            <input type="reset" value="Clear">
+        </form>
+        </div>
+    </main>
+    <footer>
+        <p>From Here to There<br>
+        Copyright &copy;2025 From Here to There<br>
+        <a href="mailto:nika@featherston.com">nika@featherston.com</a>
+        </p>
+    </footer>
+</body>
+</html>
