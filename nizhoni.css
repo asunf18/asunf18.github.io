@@ -156,7 +156,6 @@ div.sectionbox {
     line-height: 1.7;
     
 }
-    
 
 .dine-intro {
     font-style: italic;
@@ -177,6 +176,68 @@ div.sectionbox {
     width: 250px;
     max-width: 25%;
     margin: 0 0 1em 1.5em; 
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 2em auto 3em ;
+    padding: 0 1.5em;
+    padding-bottom: 2em;
+    line-height: 1.7;
+    background-color: lightgoldenrodyellow;
+}
+
+.degree-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    font-size: 1rem;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+
+.degree-table th {
+    background-color: #333; 
+    color: #fff;
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.resource-list {
+    list-style-type: disc;
+    padding-left: 20px;   
+}
+
+.resource-list :hover {
+    margin-bottom: 8px;
+    color: var(--accent);
+    text-decoration: none;
+}   
+
+.resource-list a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.degree-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.degree-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+
+.faq-section summary {
+    color: crimson;
+}
+
+.faq-section h2 {
+    color: var(--text);
 }
 
 #contactus {
